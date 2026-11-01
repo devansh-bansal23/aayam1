@@ -86,16 +86,16 @@ export const contacts: readonly Contact[] = [
     email: "shanittiwari11@gmail.com",
   },
   {
-    name: "Om Mishra",
-    role: "AGS Technical",
-    phone: "+91 88404 07983",
-    email: "mishranit76@gmail.com",
-  },
-  {
     name: "Satakshi Gupta",
     role: "AGS Technical",
     phone: "+91 63938 67824",
     email: "satakshig04@gmail.com",
+  },
+  {
+    name: "Om Mishra",
+    role: "AGS Technical",
+    phone: "+91 88404 07983",
+    email: "mishranit76@gmail.com",
   },
 ];
 
