@@ -62,12 +62,11 @@ export const navItems: readonly NavItem[] = [
   { label: "Guests", href: "/guests", ready: false },
   { label: "Timeline", href: "/timeline", ready: false },
   { label: "Sponsors", href: "/sponsors", ready: false },
-  { label: "Merch", href: "/merch", ready: true, badge: "Early bird" },
   { label: "Our Team", href: "/team", ready: false },
 ] as const;
 
-/** Destinations shown directly in the top bar on desktop (Merch also on phones). */
-export const headerLinks: readonly string[] = ["/events", "/timeline", "/guests", "/merch"];
+/** Destinations shown directly in the top bar on desktop . */
+export const headerLinks: readonly string[] = ["/events", "/timeline", "/guests"];
 
 export type Contact = {
   name: string;
@@ -142,34 +141,4 @@ export const gallery: readonly GalleryPhoto[] = [
   { src: "/images/gallery/23.webp", alt: "Students discussing their work at a project table" },
   { src: "/images/gallery/24.webp", alt: "Rows of participants at computers in a lab" },
   { src: "/images/gallery/25.webp", alt: "Guests at the inaugural ceremony on stage" },
-];
-
-export type MerchItem = {
-  name: string;
-  /** Price in Indian rupees */
-  price: number;
-  image: string;
-  alt: string;
-};
-
-/** Official AAYAM merchandise (images in public/images/merch/). */
-export const merch: readonly MerchItem[] = [
-  {
-    name: "Hoodie",
-    price: 649,
-    image: "/images/merch/hoodie.webp",
-    alt: "Black AAYAM hoodie: small logo on the front, 'Ghost in the Machine' print on the back",
-  },
-  {
-    name: "Oversized Tee",
-    price: 549,
-    image: "/images/merch/oversized-tee.webp",
-    alt: "Black oversized AAYAM T-shirt: circuit print on the front, 'Hustler' collage print on the back",
-  },
-  {
-    name: "Polo",
-    price: 499,
-    image: "/images/merch/polo.webp",
-    alt: "Black AAYAM polo: circuit print on the front, green 'Dystopian' collage print on the back",
-  },
 ];
